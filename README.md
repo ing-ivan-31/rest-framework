@@ -30,3 +30,12 @@ docker-compose run web sh -c "django-admin.py startapp users ./api/users"
 **Up docker container**
 
 docker-compose up web
+
+**Run tests**
+ 
+ docker-compose run web sh -c "python manage.py test"
+
+**Run tests And Linting**
+ 
+ docker-compose run web sh -c "python manage.py test  && flake8"
+
