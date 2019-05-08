@@ -18,3 +18,8 @@ WORKDIR /app
 
 # Copy app to docker container
 COPY ./app /app
+
+# Add python path for new custom modules
+ENV PATH=$PATH:/app/music
+ENV PYTHONPATH /app/music
+
