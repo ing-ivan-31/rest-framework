@@ -23,6 +23,10 @@ docker-compose run web sh -c "django-admin.py startapp users ./api/users"
  
  docker-compose run  web sh -c "python manage.py migrate"
  
+ **Create Migrations**
+ 
+ docker-compose run  web sh -c "python manage.py makemigrations core"
+ 
 **Add Super User Password: secret1234**
  
   docker-compose run  web sh -c "python manage.py createsuperuser --email admin@example.com --username admin"
